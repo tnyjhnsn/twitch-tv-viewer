@@ -1,0 +1,121 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400';
+
+$primary-color: #253542;
+$online-color: green;
+$offline-color: #C9382E;
+$noexist-color: gray;
+$text-color: #ECEFF1;
+$second-text-color: #938D9E;
+$divider-size: 1px;
+
+body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: $second-text-color;
+  background-color: $primary-color;
+  font-family: Ubuntu;
+}
+
+#logo {
+  display: inline;
+  color: $text-color;
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.btn-circle {
+  float: right;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+#all-btn {
+  background-color: #9D9A9E;
+}
+
+#online-btn {
+  background-color: $online-color;
+}
+
+#offline-btn {
+  background-color: $offline-color;
+}
+
+.channel {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.status {
+  color: $text-color;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  padding-bottom: 2px;
+}
+
+.online {
+  border-bottom: $divider-size solid $online-color;
+}
+
+.offline {
+  border-bottom: $divider-size solid $offline-color;
+}
+
+.noexist {
+  border-bottom: $divider-size solid $noexist-color;
+}
+
+.channel-img {
+  width: 220px;
+  height: 132px;
+  margin-top: 5px;
+  margin-right: 5px;
+  float: left;
+}
+
+.logo,
+.no-logo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 5px 0 0 5px;
+  float: right;
+}
+
+.no-logo {
+  opacity: 0.2;
+  background-color: gray;
+}
+
+.name {
+  font-size: 1.25em;
+}
+
+.viewers {
+  font-size: 0.75em;
+}
+
+.description {
+  color: $text-color;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
